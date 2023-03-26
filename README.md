@@ -22,6 +22,7 @@ Please note that this is a closed beta, as it will automatically take effect onc
 
 ## Screenshot
 
+![ShareWithShareGPT](https://user-images.githubusercontent.com/8155294/227754372-f419124f-6571-4f83-b4ac-8e9542637087.gif)
 
 ## License
 
