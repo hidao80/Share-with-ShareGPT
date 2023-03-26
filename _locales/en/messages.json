@@ -1,0 +1,17 @@
+{
+    "appName": {
+        "message": "Share with ShareGPT"
+    },
+    "appDesc": {
+        "message": "Share your conversations on ChatGPT with your own account on ShareGPT"
+    },
+    "Do_you_really_want_to_share": {
+        "message": "Do you really want to share?"
+    },
+    "Failed_to_share": {
+        "message": "Failed to share."
+    },
+    "Share": {
+        "message": "Share"
+    }
+}

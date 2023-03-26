@@ -1,0 +1,17 @@
+{
+    "appName": {
+        "message": "ShareGPTで共有"
+    },
+    "appDesc": {
+        "message": "ChatGPTでの会話をShareGPTの自分のアカウントで共有することができます。"
+    },
+    "Do_you_really_want_to_share": {
+        "message": "本当に共有しますか？"
+    },
+    "Failed_to_share": {
+        "message": "共有に失敗しました。"
+    },
+    "Share": {
+        "message": "共有する"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "version": "0.2",
+    "default_locale": "en",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "hidao80@github__comShare-with-ShareGPT"
+        }
+    },
+    "icons": {
+        "256": "Identicon.png"
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://chat.openai.com/chat",
+                "https://chat.openai.com/chat/*"
+            ],
+            "js": [
+                "app.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ]
+}
