@@ -8,7 +8,7 @@ Firefox extension to share ChatGPT chat contents with ShareGPT.
 
 ## Install
 
-After downloading the zip, open about:debugging#/runtime/this-firefox in Firefox and under "Temporary Extensions", click the "Load temporary add-ons..." button to open the file selection dialog and select this zip that you downloaded.
+After downloading the zip, open `about:debugging#/runtime/this-firefox` in Firefox and under "Temporary Extensions", click the "Load temporary add-ons..." button to open the file selection dialog and select this zip that you downloaded.
 
 When you access chatGPT in this state, "Share with ShareGPT" will appear in the extension icon on the right of the address bar, and a lamp (dot?) will appear under the Share with ShareGPT extension icon. ) below the Share with ShareGPT extension icon, you are ready to go.
 
