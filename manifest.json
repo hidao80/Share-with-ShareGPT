@@ -12,20 +12,14 @@
     "icons": {
         "256": "Identicon.png"
     },
-    "content_scripts": [
-        {
-            "run_at": "document_end",
-            "matches": [
-                "https://chat.openai.com/chat",
-                "https://chat.openai.com/chat/*"
-            ],
-            "js": [
-                "app.js"
-            ]
-        }
-    ],
+    "background": {
+        "service_worker": "app.js"
+    },
     "permissions": [
         "activeTab",
         "scripting"
+    ],
+    "host_permissions" : [
+        "*://chat.openai.com/chat/*"
     ]
 }
