@@ -23,3 +23,7 @@ When you click "OK," the chat content of the current page will be shared to Shar
 ## License
 
 [MIT](/LICENSE)
+
+## Special thanks
+
+@kojix2
