@@ -5,7 +5,7 @@
  */
 
 // Debug print flag
-const IS_DEBUG_MODE = false;
+const IS_DEBUG_MODE = !false;
 IS_DEBUG_MODE && console.debug("Share-with-ShareGPT: start");
 
 // echo Share-with-ShareGPT | md5sum
@@ -111,10 +111,11 @@ function addButton() {
                     });
                 }
             }
+            IS_DEBUG_MODE && console.debug(result.items);
 
             // Open a confirmation dialog and share only when you agree.
             if (confirm(browser.i18n.getMessage("Do_you_really_want_to_share"))) {
-                fetch("https://sharegpt.com/api/save", {
+                fetch("https://sharegpt.com/api/conversations", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -142,7 +143,7 @@ function addButton() {
                         IS_DEBUG_MODE && console.debug("Share-with-ShareGPT: done.");
                     })
                     .catch(err => {
-                        alart(browser.i18n.getMessage("Failed_to_share"));
+                        alert(browser.i18n.getMessage("Failed_to_share"));
                         IS_DEBUG_MODE && console.error(err);
                     })
             }
