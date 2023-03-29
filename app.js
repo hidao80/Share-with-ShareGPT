@@ -5,7 +5,7 @@
  */
 
 // Debug print flag
-const IS_DEBUG_MODE = !false;
+const IS_DEBUG_MODE = false;
 IS_DEBUG_MODE && console.debug("Share-with-ShareGPT: start");
 
 // echo Share-with-ShareGPT | md5sum
