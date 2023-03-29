@@ -8,7 +8,7 @@ Firefox extension to share ChatGPT chat contents with ShareGPT.
 
 ## Install
 
-It will be available for download from the store! Coming Soon...
+It is now available for download from Firefox ADD-ONS!
 
 ## Usage
 
