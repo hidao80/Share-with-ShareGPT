@@ -10,6 +10,8 @@ Firefox extension to share ChatGPT chat contents with ShareGPT.
 
 It is now available for download from Firefox ADD-ONS!
 
+<https://addons.mozilla.org/ja/firefox/addon/share-with-sharegpt/>
+
 ## Usage
 
 Chat with ChatGPT while logged in to ShareGPT, and click the "Share" button added to the form area at the bottom of the chat, which will open a confirmation dialog.
