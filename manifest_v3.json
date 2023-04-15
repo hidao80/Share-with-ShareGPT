@@ -13,7 +13,9 @@
         {
             "matches": [
                 "*://chat.openai.com/chat",
-                "*://chat.openai.com/chat/*"
+                "*://chat.openai.com/chat/*",
+                "*://chat.openai.com/",
+                "*://chat.openai.com/c/*"
             ],
             "js": ["app.js"]
         }
