@@ -1,4 +1,4 @@
-# Share with ShareGPT
+# Chat Share Powered by ChatGPT
 
 [![License](https://img.shields.io/github/license/hidao80/Share-with-ShareGPT)](/LICENSE)
 
