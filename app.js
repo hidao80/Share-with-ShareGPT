@@ -41,7 +41,7 @@ function addButton() {
 
     // Wait for existing buttons to be drawn.
     if (document.querySelector("img.rounded-sm")
-    && document.querySelectorAll(`form > div > div:nth-child(1) > button`).length == 1
+    && document.querySelectorAll(`form > div > div > div > button`).length == 1
     && document.querySelector(`#${hash}__shareButton`) == null) {
         // If you have an avatar and only one button and no share button
         const shareButton = document.createElement('button');
@@ -75,7 +75,7 @@ function addButton() {
         div.appendChild(label);
         shareButton.appendChild(div);
 
-        const formButtonArea = document.querySelector("form > div > div:nth-child(1)");
+        const formButtonArea = document.querySelector("form > div > div > div");
         formButtonArea.appendChild(shareButton);
 
         /**
@@ -85,29 +85,41 @@ function addButton() {
             event.stopPropagation();
             event.stopImmediatePropagation();
 
-            const threadContainer = document.querySelector("#__next main div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1)");
+            const threadContainer = document.querySelector("main div > div > div > div");
+
+            // show the model for chatgpt+ users
+            let model;
+
+            const chatGptPlusElement = document.querySelector(".gold-new-button");
+            const isNotChatGptPlus =
+            chatGptPlusElement && chatGptPlusElement.innerText.includes("Upgrade");
+
+            if (!isNotChatGptPlus) {
+                const modelElement = threadContainer.firstChild;
+                model = modelElement.innerText;
+            }
 
             var result = {
+                title: document.title,
                 avatarUrl: getAvatarImage(),
+                model,
                 items: [],
             };
             IS_DEBUG_MODE && console.debug(result.avatarUrl);
 
             for (const node of threadContainer.children) {
-                const markdonwContent = node.querySelector(".markdown");
+                const content = node.querySelector(".break-words");
+                const gptNode = content?.querySelector(".markdown");
 
-                // tailwind class indicates human or gpt
-                if ([...node.classList].includes("dark:bg-gray-800")) {
-                    result.items.push({
-                        from: "human",
-                        value: node.textContent,
-                    });
-                    // if it's a GPT response, it might contein code blocks
-                    // Supports dark mode
-                } else if ([...node.classList].includes("dark:bg-gray-50") || [...node.classList].includes("dark:bg-[#444654]")) {
+                if (gptNode) {
                     result.items.push({
                         from: "gpt",
-                        value: markdonwContent.outerHTML,
+                        value: gptNode.innerHTML,
+                    });
+                } else if (content) {
+                    result.items.push({
+                        from: "human",
+                        value: content.textContent,
                     });
                 }
             }
