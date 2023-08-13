@@ -11,6 +11,9 @@
     "Failed_to_share": {
         "message": "Failed to share."
     },
+    "There_is_no_chat": {
+        "message": "There is no chat."
+    },
     "Share": {
         "message": "Share"
     }

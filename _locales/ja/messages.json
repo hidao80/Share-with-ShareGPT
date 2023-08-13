@@ -11,7 +11,12 @@
     "Failed_to_share": {
         "message": "共有に失敗しました。"
     },
+    "There_is_no_chat": {
+        "message": "チャットが見つかりません。"
+    },
     "Share": {
         "message": "共有する"
     }
 }
+
+

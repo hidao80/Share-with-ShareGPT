@@ -1,8 +1,8 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
-    "version": "0.4",
+    "version": "0.6",
     "default_locale": "en",
     "browser_specific_settings": {
         "gecko": {
@@ -23,7 +23,6 @@
     },
     "permissions": [
         "activeTab",
-        "scripting",
-        "*://sharegpt.com/api/*"
+        "scripting"
     ]
 }
