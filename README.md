@@ -20,7 +20,7 @@ When you click "OK," the chat content of the current page will be shared to Shar
 
 ## Screenshot
 
-![ShareWithShareGPT](https://user-images.githubusercontent.com/8155294/227754372-f419124f-6571-4f83-b4ac-8e9542637087.gif)
+![Share-with-ShareGPT](https://github.com/hidao80/Share-with-ShareGPT/assets/8155294/b046abc5-79b8-47ca-8891-154f2818ffe5)
 
 ## License
 
